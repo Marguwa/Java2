@@ -42,7 +42,7 @@ public class Main {
 
             for (int j = 0; j < arr[i].length; j++) {
                 try {
-                    sum = sum + Integer.parseInt(arr[i][j]);
+                    sum += Integer.parseInt(arr[i][j]);
                 }
                 catch (NumberFormatException e) {
                     throw new MyArrayDataException(i, j);
